@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ejs page</title>
+</head>
+<body>
+    <%- include ('common/header.ejs')%>
+    <h1>welcome <%= data.name %></h1>
+    <ul>
+        <% data.skills.forEach(item => { %>
+            <li><%= item %></li>
+        <% }); %>
+    </ul>
+</body>
+</html>
