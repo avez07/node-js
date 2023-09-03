@@ -1,18 +1,22 @@
 {
-  "name": "node-js",
+  "name": "js",
   "version": "1.0.0",
-  "description": "",
-  "main": "mongosh/mongo.js",
+  "description": "module should install or this project",
+  "main": "api/mongo.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node api/mongo.js"
   },
   "author": "avez",
   "license": "ISC",
   "type": "module",
   "dependencies": {
     "colors": "^1.4.0",
+    "dotenv": "^16.3.1",
     "ejs": "^3.1.9",
     "express": "^4.18.2",
+    "mongodb": "^5.7.0",
     "path": "^0.12.7"
-  }
+  },
+  "keywords": []
 }
