@@ -21,7 +21,9 @@ var data = [{
 {
     name:'ansari avez',
     phone : '999999999s'
-}]
+}];
+
+
 
 // app.get('', async (req, res) => {
 //     try {
