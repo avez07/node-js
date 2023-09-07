@@ -1,5 +1,6 @@
 import fs from "fs";
 import express from "express";
+import router from '../router/addrouter.js'
 import { MongoClient } from "mongodb";
 import dbConnect from "../config.js";
 import multer from "multer";
@@ -58,4 +59,5 @@ app.use(express.json());
 //   console.log(req.file.filename);
 //   res.status(200).send("file uploaded");
 // });
+app.use('/api',router)
 app.listen(5500);
