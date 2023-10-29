@@ -2,9 +2,9 @@
   "name": "js",
   "version": "1.0.0",
   "description": "module should install or this project",
-  "main": "mongosh/schema.js",
+  "main": "api/index.js",
   "scripts": {
-    "start": "nodemon mongosh/schema.js",
+    "start": "nodemon api/index.js",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "author": "avez",

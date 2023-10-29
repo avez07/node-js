@@ -6,7 +6,7 @@ app.use(express.json());
 
 const addData = async(req,res)=>{
 let data = req.body;
-console.log(data);
+console.log(data); return false
 const db = await dbconnect();
 const collection =   db.collection('user_login')
 var response = await collection.find(data).toArray()
@@ -14,6 +14,7 @@ var response = await collection.find(data).toArray()
 }
 const insertData = async(req,res)=>{
     let data = req.body;
+    console.log(data); return false;
     const db = await dbconnect();
     const collection =   db.collection('user_login')
     var response = await collection.insertOne(data);
